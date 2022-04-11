@@ -1,0 +1,65 @@
+.manana-editor-wrap {
+  border: 1px solid #2b3c46;
+  padding: 10px 15px;
+  position: relative;
+
+  .manana-editor {
+    display: inline-block;
+    width: 100%;
+    cursor: auto;
+
+    img {
+      max-width: 100%;
+    }
+
+    iframe {
+      border: none;
+    }
+  }
+
+  ul.manana-editor-toolbar {
+    margin: -10px -15px 10px -15px;
+    padding: 0 5px;
+    list-style: none;
+    background-color: #2b3c46;
+
+    position: sticky;
+    z-index: 1;
+
+    li {
+      font-size: 24px;
+      line-height: 2em;
+      display: inline-block;
+      padding: 0 5px;
+
+      button {
+        color: #7996a9;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        &:hover {
+          color: #2196f3;
+        }
+      }
+    }
+  }
+
+  .manana-editor-curtain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
